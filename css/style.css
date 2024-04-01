@@ -213,9 +213,32 @@ footer ul {
 footer a:hover {
     text-decoration: underline;
 }
+
+@media screen and (min-width: 600px) {
+    .d-none-desktop {
+        display: none;
+    }
+    .col-65 {
+        width: calc(65% - 40px);
+        padding-right: 40px;
+    }
+}
 @media screen and (max-width: 600px) {
     .col-6 {
         width: 100%;
+    }
+
+    .col-65 {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .col-35 {
+        width: 100%;
+        margin-top: 40px;
+    }
+    .d-none-mobile {
+        display: none;
     }
 }
 
